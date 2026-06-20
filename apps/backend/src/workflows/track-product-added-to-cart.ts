@@ -8,7 +8,7 @@ type StepInput = {
 };
 
 const trackProductAddedToCartStep = createStep(
-  "track-product-added-to-cart-step",
+  "track-product-added-to-cart",
   async ({ cart }: StepInput, { container }) => {
     if (!cart?.items?.length) {
       return;
@@ -39,7 +39,7 @@ type WorkflowInput = {
 };
 
 export const trackProductAddedToCartWorkflow = createWorkflow(
-  "track-product-added-to-cart-workflow",
+  "track-product-added-to-cart",
   ({ cart_id }: WorkflowInput) => {
     const { data: carts } = useQueryGraphStep({
       entity: "cart",

@@ -31,7 +31,7 @@ export default async function orderPlacedHandler({
     },
   })
 
-  console.log("EMAIL NOTIFICATION CREATED")
+  console.log("ORDER EMAIL NOTIFICATION CREATED")
 }
 
 export const config: SubscriberConfig = {
