@@ -48,7 +48,7 @@ module.exports = defineConfig({
       resolve: "@medusajs/medusa/workflow-engine-redis",
       options: {
         redis: {
-          redisUrl: process.env.REDIS_URL,
+          redisUrl: process.env.S_REDIS_URL,
         },
       },
     },
@@ -96,7 +96,6 @@ module.exports = defineConfig({
               region: process.env.S3_REGION,
               bucket: process.env.S3_BUCKET,
               endpoint: process.env.S3_ENDPOINT,
-              // other options...
             },
           },
         ],
