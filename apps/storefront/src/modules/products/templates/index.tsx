@@ -9,6 +9,7 @@ import ProductInfo from "@modules/products/templates/product-info"
 import SkeletonRelatedProducts from "@modules/skeletons/templates/skeleton-related-products"
 import { notFound } from "next/navigation"
 import { HttpTypes } from "@medusajs/types"
+import ProductReviews from "../components/product-reviews"
 
 import ProductActionsWrapper from "./product-actions-wrapper"
 
@@ -56,6 +57,9 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
             <ProductActionsWrapper id={product.id} region={region} />
           </Suspense>
         </div>
+      </div>
+      <div className="content-container my-16 small:my-32">
+         <ProductReviews productId={product.id} />
       </div>
       <div
         className="content-container my-16 small:my-32"
