@@ -41,6 +41,9 @@ importers:
       '@tanstack/react-query':
         specifier: 5.64.2
         version: 5.64.2(react@18.3.1)
+      '@types/pdfmake':
+        specifier: 0.2.2
+        version: 0.2.2
       axios:
         specifier: ^1.18.0
         version: 1.18.0
@@ -75,9 +78,6 @@ importers:
       '@types/node':
         specifier: ^20.12.11
         version: 20.19.43
-      '@types/pdfmake':
-        specifier: ^0.3.3
-        version: 0.3.3
       '@types/react':
         specifier: ^18.3.2
         version: 18.3.31
@@ -2943,8 +2943,8 @@ packages:
   '@types/pdfkit@0.17.6':
     resolution: {integrity: sha512-tIwzxk2uWKp0Cq9JIluQXJid77lYhF52EsIOwhsMF4iWLA6YneoBR1xVKYYdAysHuepUB0OX4tdwMiUDdGKmig==}
 
-  '@types/pdfmake@0.3.3':
-    resolution: {integrity: sha512-ufbceB4Q3dKpmFUMKEbZvJcfLi8+C5b1+rTFVG6urtkS3FHwaTQH6NCh/iEEDINlApCxH/W3/rsq99pP5E9/JA==}
+  '@types/pdfmake@0.2.2':
+    resolution: {integrity: sha512-CBtkugrgklpXsZ9Wj/+cw+zYoeDnJxVev62ahwpdPCz/O405Wxr+iq76JgUiZc/QAo3P2lWbI2nYA5GrrSL8VQ==}
 
   '@types/pg-pool@2.0.6':
     resolution: {integrity: sha512-TaAUE5rq2VQYxab5Ts7WZhKNmuN78Q6PiFonTDdpbx8a1H0M1vhy3rhiMjl+e2iHmogyMw7jZF4FrE6eJUy5HQ==}
@@ -9758,7 +9758,7 @@ snapshots:
     dependencies:
       '@types/node': 20.19.43
 
-  '@types/pdfmake@0.3.3':
+  '@types/pdfmake@0.2.2':
     dependencies:
       '@types/node': 20.19.43
       '@types/pdfkit': 0.17.6
