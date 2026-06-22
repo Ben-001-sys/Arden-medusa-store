@@ -46,7 +46,7 @@ export const listProducts = async ({
     }
   }
 
-  const headers = {
+  const headers = { 
     ...(await getAuthHeaders()),
   }
 
