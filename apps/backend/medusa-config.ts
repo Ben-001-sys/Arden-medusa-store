@@ -141,5 +141,16 @@ module.exports = defineConfig({
     {
       resolve: "./src/modules/brand",
     },
+    {
+      resolve: "./modules/strapi",
+      options: {
+        apiUrl: process.env.STRAPI_API_URL,
+        apiToken: process.env.STRAPI_API_TOKEN,
+        defaultLocale: process.env.STRAPI_DEFAULT_LOCALE || "en",
+      },
+    },
   ],
+  featureFlags: {
+    caching: true,
+  },
 })

@@ -2,7 +2,7 @@ lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
-  excludeLinksFromLockfile: false 
+  excludeLinksFromLockfile: false
 
 importers:
 
@@ -41,6 +41,9 @@ importers:
       '@medusajs/ui':
         specifier: 4.1.15
         version: 4.1.15(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
+      '@strapi/client':
+        specifier: ^1.6.2
+        version: 1.6.2
       '@tanstack/react-query':
         specifier: 5.64.2
         version: 5.64.2(react@18.3.1)
@@ -2734,6 +2737,10 @@ packages:
 
   '@so-ric/colorspace@1.1.6':
     resolution: {integrity: sha512-/KiKkpHNOBgkFJwu9sh48LkHSMYGyuTcSFK/qMBdnOAlrRJzRSXAOFB5qwzaVQuDl8wAvHVMkaASQDReTahxuw==}
+
+  '@strapi/client@1.6.2':
+    resolution: {integrity: sha512-yISbChmwyp0Br1i8iafli38SGy1um9vqN7tzzEHyehrQsx1rkVe1r5Wkgd1DOAYtJcMnH7QmX/owSrHqN4rHEw==}
+    engines: {node: '>=20.18.2 <=24.x.x'}
 
   '@swc/core-darwin-arm64@1.15.41':
     resolution: {integrity: sha512-kREh6J5paQFvP3i7f/4FbqRNOJREutVFVOkder4GVyCBQ39YmER55cW/y1NNjwrchzFqgYswFn0mMDCqbqKzrw==}
@@ -9563,6 +9570,13 @@ snapshots:
     dependencies:
       color: 5.0.3
       text-hex: 1.0.0
+
+  '@strapi/client@1.6.2':
+    dependencies:
+      debug: 4.4.3
+      qs: 6.15.2
+    transitivePeerDependencies:
+      - supports-color
 
   '@swc/core-darwin-arm64@1.15.41':
     optional: true

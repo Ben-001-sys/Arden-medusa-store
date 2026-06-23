@@ -4,6 +4,11 @@ import { HttpTypes } from "@medusajs/types"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import Thumbnail from "../thumbnail"
 import PreviewPrice from "./price"
+import { 
+  getProductTitle, 
+  getProductImages, 
+  getProductThumbnail,
+} from "@lib/util/strapi"
 
 export default async function ProductPreview({
   product,
@@ -26,7 +31,9 @@ export default async function ProductPreview({
   const { cheapestPrice } = getProductPrice({
     product,
   })
-
+const title = getProductTitle(product)
+const images = getProductImages(product)
+const thumbnail = getProductThumbnail(product) || product.thumbnail
   return (
     <LocalizedClientLink href={`/products/${product.handle}`} className="group">
       <div data-testid="product-wrapper">
