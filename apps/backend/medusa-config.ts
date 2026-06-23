@@ -138,5 +138,8 @@ module.exports = defineConfig({
     {
       resolve: "./src/modules/product-review",
     },
+    {
+      resolve: "./src/modules/brand",
+    },
   ],
 })
