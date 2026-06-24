@@ -1,5 +1,9 @@
-import { z } from "@medusajs/framework/zod"
+import { z } from "@medusajs/framework/zod";
 
 export const PostAdminCreateBrand = z.object({
-  name: z.string(),
-})
+  name: z
+    .string()
+    .trim()
+    .min(1, "Brand name is required")
+    .max(100, "Brand name must be 100 characters or less"),
+});
